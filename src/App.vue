@@ -104,7 +104,9 @@ async function auth() {
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: "google",
     options:{
-      redirectTo:"http://127.0.0.1:3000/"
+      redirectTo:1 ? 
+      "https://ahibis.github.io/simple_chat/":
+      "http://127.0.0.1:3000/"
     }
   });
 }
