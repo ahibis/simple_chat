@@ -30,6 +30,10 @@ export default defineConfig({
       '.vue',
     ],
   },
+  base: "./",
+  build:{
+    outDir:process.env.DOCS=="true" ? "./docs" : "./dist"
+  },
   server: {
     port: 3000,
   },
