@@ -100,8 +100,12 @@ onMounted(async () => {
 });
 
 async function auth() {
+  
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: "google",
+    options:{
+      redirectTo:"https://ahibis.github.io/simple_chat/"
+    }
   });
 }
 async function logout() {
