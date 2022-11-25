@@ -45,7 +45,7 @@
             </v-list>
           </div>
           <div>
-            <v-text-field v-model="text" @keydown.enter="send">
+            <v-text-field v-model="text" @keydown.enter="send" label="отправить сообщение">
 
             </v-text-field>
           </div>
@@ -104,7 +104,7 @@ async function auth() {
   const { data, error } = await supabase.auth.signInWithOAuth({
     provider: "google",
     options:{
-      redirectTo:"https://ahibis.github.io/simple_chat/"
+      redirectTo:"http://127.0.0.1:3000/"
     }
   });
 }
