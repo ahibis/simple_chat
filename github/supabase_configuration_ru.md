@@ -38,14 +38,18 @@
 Я выставил для message
 SELECT: 
 * USING expression = true
+
 INSERT
 * role = authenticated
 * USING expression = true
+
 DELETE: 
 * USING expression = (uid() = user_id)
+
 UPDATE:
 * USING expression = (uid() = user_id)
 * WITH CHECK expression = (uid() = user_id)
+
 Для user_info аналогично
 ## Дополнительно
 * Как пользоваться supabase-js
