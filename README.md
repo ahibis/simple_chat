@@ -1,7 +1,8 @@
 # authExpress
 Simple registration on express.js, sequelize, axios
 ## Screenshots
-![chat](/image.png)
+![image](https://user-images.githubusercontent.com/37046811/204093824-ac19002b-9116-4935-8aa3-970a7d84f3f3.png)
+
 
 ## Supabase configuration
 ### [конфигурация supabase на русском](/github/supabase_configuration_ru.md)
