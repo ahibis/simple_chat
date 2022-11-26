@@ -1,5 +1,6 @@
 # Конфигурация supabase
 Сначала нужно создать проект https://app.supabase.com/projects
+
 Войти в проект
 ## 1. Подключение к supabase
 нужно скопировать URL и AnonKey и вставить в supabase.js
@@ -22,9 +23,9 @@
 Добавление таблиц:
 ![image](https://user-images.githubusercontent.com/37046811/204095153-b59077f2-6cff-4c5f-8f7f-f99c2f2b9f5c.png)
 Обязательно нужно ставить галочки 
-Enable Row Level Security (RLS) для того что поставить права доступа к таблице
-Enable Realtime для того чтобы присылались события измения бд на клиент
-Для данного проекта указать для message и user_info такую структуру
+* Enable Row Level Security (RLS) для того что поставить права доступа к таблице
+* Enable Realtime для того чтобы присылались события измения бд на клиент
+### Для данного проекта указать для message и user_info такую структуру
 ![image](https://user-images.githubusercontent.com/37046811/204095258-a3ec5962-6a40-4ba5-892f-782330530ac5.png)
 ![image](https://user-images.githubusercontent.com/37046811/204095282-80866476-2107-4361-808b-35c0f0db07f3.png)
 ## 4. Добавление policies на таблицы
@@ -32,7 +33,8 @@ Enable Realtime для того чтобы присылались события
 ![image](https://user-images.githubusercontent.com/37046811/204095394-4b6dea72-d2b6-469f-b824-b72804fe2bb0.png)
 Пример для Select
 ![image](https://user-images.githubusercontent.com/37046811/204095450-504a90dc-cb52-4609-a108-5b4cbc914d0b.png)
-так же выставляем для тех вещей которые надо
+таким же образом выставляем для нужных таблиц 
+
 Я выставил для message
 SELECT: 
 * USING expression = true
